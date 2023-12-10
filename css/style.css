@@ -1,0 +1,598 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap);
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body
+{
+background: lightblue;
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+}
+
+.container
+{
+  position: relative;
+  width: 100%;
+  max-width: 1100px;
+  min-height: 2000px;
+  margin: 50px;
+  background: #fff;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+}
+
+.container .left_Side
+{
+  position: relative;
+  background: #003147;
+  padding-left: 20px;
+  padding-right: 5px;
+  padding-top: 25px;
+  min-width: 320px;
+}
+
+.profileText
+{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.profileText .imgBx
+{
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profileText .imgBx img
+{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+.profileText h2
+{
+color: #fff;
+font-size: 1.5em;
+margin-top: 20px;
+text-transform: uppercase;
+text-align: center;
+font-weight: 600;
+line-height: 1.4em;
+}
+
+.profileText h2 span
+{
+font-weight: 300;
+font-size: 0.8em;
+}
+
+.info
+{
+  padding-top: 40px;
+}
+.title
+{
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.info ul
+{
+  position: relative;
+}
+.info ul li
+{
+  position: relative;
+  list-style: none;
+  margin: 10px 0;
+  cursor: pointer;
+}
+.info ul li .icon
+{
+  display: inline-block;
+  width: 30px;
+  font-size: 18px;
+  color: #03a9f4;
+}
+.info ul li span
+{
+  color: #fff;
+  font-weight: 600;
+}
+
+.info .education li
+{
+  margin-bottom: 15px;
+}
+
+.info.education h5
+{
+  color: #03a9f4;
+  font-weight: 500;
+}
+.info.education h4:nth-child(2)
+{
+  color: #fff;
+  font-weight: 500;
+}
+.info.education h4
+{
+  color: #fff;
+  font-weight: 300;
+}
+
+.info.language .percent
+{
+  position: relative;
+  width: 100%;
+  height: 6px;
+  background: #081921;
+  display: block;
+  margin-top: 5px;
+}
+.info.language .percent div
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #03a9f4;
+}
+
+ul.about
+{
+  list-style-type: none;
+}
+ul.about li b {
+  position: relative;
+  display: inline-block;
+  min-width: 135px;
+}
+ul.about li b::after  {
+  content: ":";
+  position: absolute;
+  right: 0;
+}
+
+.info ul.ability li
+{
+  
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.container .right_Side
+{
+  position: relative;
+  background: #fff;
+  padding: 20px;
+  min-width: 780;
+}
+
+.right_Side .info .table
+{
+  border-collapse: collapse;
+  width: 100%;
+  padding-bottom: 4%;
+}
+
+th {
+  text-align: left;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+td {
+  font-weight: 400;
+  padding-bottom: 1%;
+  padding-top: 1%;
+}
+
+.about
+{
+  margin-bottom: 50px;
+}
+
+.position {
+  font-weight: bold;
+  display: inline-block;
+  /*text-decoration: underline;*/
+}
+.section
+{
+  margin-bottom: 2%;
+}
+.desc2
+{
+  display: flex;
+}
+
+.about .certificate
+{
+  display: grid;
+  grid-auto-columns: 1fr; 
+  grid-auto-rows: 1fr; 
+  grid-template-columns: 1fr 1fr;
+  gap: 0px 20px;
+  
+}
+
+.certificate li
+{
+  font-weight: lighter;
+  padding-bottom: 2%;
+  white-space: nowrap;
+}
+
+
+.about:last-child
+{
+  margin-bottom: 0;
+}
+
+.title2
+{
+  color: #003147;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 2em;
+}
+
+p
+{
+  color: #333;
+}
+
+.about .box
+{
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0;
+}
+.about .box .year_company
+{
+  min-width: 150px;
+}
+.about .box .year_company h5
+{
+  text-transform: uppercase;
+  max-width: 150px;
+  color: #848c90;
+  font-weight: 600;
+}
+.about .box .year_company h6
+{
+  text-transform: uppercase;
+  color: #003147;
+  font-weight: 900;
+}
+
+.about .box .text h4
+{
+  text-transform: uppercase;
+  color: #2a7da2;
+  font-size: 16px;
+}
+
+.skills .box
+{
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills .box h4
+{
+  text-transform: uppercase;
+  color: #848c99;
+  font-weight: 500;
+}
+.skills .box .percent
+{
+  position: relative;
+  width: 100%;
+  height: 10px;
+  background: #f0f0f0;
+}
+.skills .box .percent div/*TODO: delete all skils blocks if possible*/
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #03a9f4;
+}
+
+.about .certificate
+{
+  display: grid;
+  color: #333;
+  list-style: none;
+  font-weight: 600;
+  grid-template-columns: repeat(2,1fr);
+}
+.qualifications ul
+{
+  text-transform: uppercase;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap: 0 1em;
+  max-width : 100%;
+}
+
+.qualifications ul li
+{
+  list-style: none;
+  color: #333;
+  font-weight: bold;
+  margin: 10p 0;
+  padding: 2% 0;
+  /*border: 1px solid black;*/
+  white-space: nowrap;
+}
+.about ul li .fa
+{
+  color: #03a9f4;
+  font-size: 18px;
+  width: 20px;
+}
+
+/* hobies*/
+.hobies ul
+{
+  text-transform: uppercase;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap: 0 1em;
+  max-width : 70%;
+}
+
+.hobies ul li
+{
+  list-style: none;
+  color: #333;
+  font-weight: bold;
+  margin: 10p 0;
+  padding: 2% 0;
+  /*border: 1px solid black;*/
+  white-space: nowrap;
+}
+
+/* main title style for Right side*/
+.maintitle
+{
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.maintitle img
+{
+  height: 60px;
+}
+
+.maintitle .title
+{
+  white-space: nowrap;
+  margin-left: 1.5%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.maintitle .rectangle {
+  width: 100%;
+  height: 1cap;
+  background-color: #003147;
+  border: 1px solid #003147;
+  margin-left: 2%;
+}
+/* main title style finish*/
+
+/* main title style for Left side*/
+.maintitle-L
+{
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.maintitle-L img
+{
+  height: 45px;
+  color: white;
+}
+
+.maintitle-L .title
+{
+  white-space: nowrap;
+  margin-left: 1.5%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.maintitle-L .rectangle {
+  width: 100%;
+  height: 0.8cap;
+  background-color: white;
+  border: 1px solid white;
+  margin-left: 4%;
+}
+/* main title style finish*/
+
+/* biography style start*/
+/* Timeline Container */
+.info .timeline {
+  background: #003147;
+  margin: 20px auto;
+}
+
+/* Card container */
+.card {
+  position: relative;
+  width: 95%;
+}
+
+/* setting padding based on even or odd */
+.card:nth-child(odd) {
+  padding: 30px 0 30px 30px;
+}
+.card:nth-child(even) {
+  padding: 30px 30px 30px 0;
+}
+/* Global ::before */
+.card::before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  border: solid white;
+}
+
+/* Setting the border of top, bottom, left */
+.card:nth-child(odd)::before {
+  left: 0px;
+  top: -4.95px; /*make changes to align white lines*/
+  bottom: -4.5px;
+  border-width: 5px 0 5px 5px;
+  border-radius: 50px 0 0 50px;
+}
+
+/* Setting the top and bottom to "-5px" because earlier it was out of a pixel in mobile devices */
+
+
+/* Setting the border of top, bottom, right */
+.card:nth-child(even)::before {
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-width: 5px 5px 5px 0;
+  border-radius: 0 50px 50px 0;
+}
+
+/* Removing the border if it is the first card */
+.card:first-child::before {
+  border-top: 0;
+  border-top-left-radius: 0;
+}
+
+/* Removing the border if it is the last card  and it's odd */
+.card:last-child:nth-child(odd)::before {
+  border-bottom: 0;
+  border-bottom-left-radius: 0;
+}
+
+/* Removing the border if it is the last card  and it's even */
+.card:last-child:nth-child(even)::before {
+  border-bottom: 0;
+  border-bottom-right-radius: 0;
+}
+
+/* Detail about the timeline */
+.detail {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  vertical-align: super;
+}
+
+.detail h3{
+  margin: 0;
+  font-size: 1em;
+}
+
+/* Title of the card */
+.detail .title {
+  color: #003147;
+  font-weight: 500;
+  position: relative;
+}
+
+/* Timeline dot  */
+.detail .title::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 999px;
+  border: 3px solid #03a9f4;
+}
+
+/* text right if the card is even  */
+.card:nth-child(even) > .detail > .title {
+  text-align: left;
+}
+
+/* setting dot to the left if the card is odd */
+.card:nth-child(odd) > .detail > .title::before {
+  left: -45px;
+}
+
+/* setting dot to the right if the card is odd */
+.card:nth-child(even) > .detail > .title::before {
+  right: -45px;
+}
+/* biography style finish*/
+
+@media (max-width: 1000px)
+{
+  .container
+  {
+    margin: 10px;
+    grid-template-columns: repeat(1,1fr);
+  }
+  .qualifications ul
+  {
+    grid-template-columns: repeat(4,1fr);
+  }
+  .about .certificate
+  {
+    grid-template-columns: repeat(1,1fr);
+  }
+}
+
+@media (max-width: 600px)
+{
+  .about .box
+  {
+    flex-direction: column;
+  }
+  .about .year_company
+  {
+    margin-bottom: 5px;
+  }
+  .qualifications ul /*TODO: delete all interst blocks if possible*/
+  {
+    grid-template-columns: repeat(5,1fr);
+  }
+  .skills .box /*TODO: delete all skils blocks if possible*/
+  {
+    grid-template-columns: repeat(1,1fr);
+  }
+}
